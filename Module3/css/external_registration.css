@@ -235,4 +235,16 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 /* custom styles*/
 .fullwidth{width:100%;}
-.aligncenter{margin: auto; width:700px;}
+.aligncenter{margin: auto; width:700px; background-color: white;}
+.button {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+  } 
+.button-center{margin:auto; background-color: #2596be}
+.table-border{
+    border: 1px solid black;
+    padding: 0.75rem 1.5rem
+  };
