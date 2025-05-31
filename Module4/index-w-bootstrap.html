@@ -5,57 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Create a link ot the external CSS-->
-     <link rel="stylesheet" href="css/external_registration.css">
+     <!--<link rel="stylesheet" href="external_registration.css">-->
+     <link rel="stylesheet" href="bootstrap.css">
+     <link rel="stylesheet" href="datepicker.css">
+     <link rel="stylesheet" href="custom.css">
      
     <title>Employee Registration Form</title>
 </head>
-<body style="background-color: rgb(197, 195, 195);">
-    <div class="container">
-        <table class="aligncenter table-border">
+<body class="font1">
+    <div id="usercard" class="container" style="background-color: white;">
+        <table class="aligncenter">
             <tr>
                 <td colspan="2">
-                    <h1>Employee Registration Form</h1>
-                    <p>Please fill out the form for an HR department to complete your registration. An HR manager will contact you with further instructions.</p>
+                    <span style="font-size:48px">Employee Registration Form</span>
+                    <p style="font-size: 18px;">Please fill out the form for an HR department to complete your registration. An HR manager will contact you with further instructions.</p>
+                    <br/><br/>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <h2>Personal Information</h2>
+                    <b style="font-size: 20px;">Personal Information</b>
+                    <br/><br/>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <label for="firstname">Full Name</label>
+                <td style="width:50%; padding-right:20px;">
+                    <label for="firstname" style="font-size:12px">First Name</label>
                     <br>
-                    <input class="fullwidth" type="text" name="=firstname" placeholder="First Name">
+                    <input class="fullwidth bottomLiner2" type="text" name="=firstname" placeholder="Juan">
                 </td>
-                <td>
+                <td style="width:50%; padding-left:20px;">
+                    <label for="middlename" style="font-size:12px">Middle Name</label>
                     <br>
-                    <input class="fullwidth" type="text" name="=middlename" placeholder="Middle Name">
+                    <input class="fullwidth bottomLiner2" type="text" name="=middlename" placeholder="Miguel">
                 </td>
                 
             </tr>
             <tr>
-                <td>
-                    <label for="Suffix">Suffix</label>
-                <br>
-                    <select class="fullwidth" id="Suffix" name="Suffix">
+                <td style="width:50%; padding-right:20px;">
+                    <label for="Suffix" style="font-size:12px">Suffix</label>
+                    <br/>
+                    <select class="fullwidth bottomLiner2" id="Suffix" name="Suffix">
                         <option value="" disabled selected></option>
                         <option value="Sr.">Sr.</option>
                         <option value="Jr.">Jr.</option>
                         <option value="III">III</option>
                     </select>
                 </td>
-                <td>
+                <td style="width:50%; padding-left:20px;">
+                    <label for="lastname" style="font-size:12px">Last Name</label>
                     <br>
-                    <input class="fullwidth" type="text" name="=lastname" placeholder="Last Name">
+                    <input class="fullwidth bottomLiner2" type="text" name="=lastname" placeholder="Dela Cruz">
                 </td>
             </tr>
             <tr>
-                <td>
-                <label for="maritalstatus">Marital Status</label>
+                <td style="width:50%; padding-right:20px;">
+                <label for="maritalstatus" style="font-size:12px">Marital Status</label>
                 <br>
-                    <select class="fullwidth" id="maritalstatus" name="Status">
+                    <select class="fullwidth bottomLiner2" id="maritalstatus" name="Status">
                         <option value="" disabled selected></option>
                         <option value="Single">Single</option>
                         <option value="Married">Married</option>
@@ -64,10 +71,10 @@
                         <option value="Divorced">Divorced</option>
                     </select>
                 </td>
-                <td>
-                    <label for="gender">Gender</label>
+                <td style="width:50%; padding-left:20px;">
+                    <label for="gender" style="font-size:12px">Gender</label>
                     <br>
-                    <select class="fullwidth" id="gender" name="Gender" placeholder=" ">
+                    <select class="fullwidth bottomLiner2" id="gender" name="Gender" placeholder=" ">
                         <option value="" disabled selected></option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
@@ -77,54 +84,54 @@
                 </td>
             </tr>
             <tr>
-                <td>
-                    <label for="dateofbirth">Date of Birth</label>
+                <td style="width:50%; padding-right:20px;">
+                    <label for="dateofbirth" style="font-size:12px">Date of Birth</label>
                     <br>
-                        <input class="fullwidth" type="date" id="birthday" name="birthday">
-                    </td>
-                <td>
-                    <label for="mobilenumber">Mobile Number *</label>
+                        <input class="fullwidth bottomLiner2" type="date" id="birthday" name="birthday">
+                </td>
+                <td style="width:50%; padding-left:20px;">
+                    <label for="mobilenumber" style="font-size:12px">Mobile Number *</label>
                     <br>
-                    <input class="fullwidth" type="text" name="=mobilenumber" placeholder="+63XXXXXXXXX" required>
+                    <input class="fullwidth bottomLiner2" type="text" name="=mobilenumber" placeholder="+63XXXXXXXXX" required>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <label for="email">E-mail</label>
+                <td style="width:50%; padding-right:20px;">
+                    <label for="email" style="font-size:12px">E-mail</label>
                     <br>
-                    <input class="fullwidth" type="text" name="email" placeholder="E-mail">
+                    <input class="fullwidth bottomLiner2" type="text" name="email" placeholder="juandelacruz@gmail.com">
                 </td>
-                <td>
+                <td style="width:50%; padding-left:20px;">
 
                 </td>
             </tr>
             <tr>
-                <td>
+                <td style="width:50%; padding-right:20px;">
                     <!--Street Address-->
                     <tr>
                         <td colspan="2">
-                            <label for="streetaddress">Home Address</label>
+                            <label for="streetaddress" style="font-size:12px">Home Address</label>
                             <br>
-                            <input class="fullwidth" type="text" name="=streetaddress" placeholder="Street Address">
+                            <input class="fullwidth bottomLiner2" type="text" name="=streetaddress" placeholder="#123 Paredes Street">
                         </td>
                     </tr>
                     <!--City-->
                     <tr>
                         <td>
                             <tr>
-                                <td>
-                                    <input class="fullwidth" type="text" name="city" placeholder="City">
+                                <td style="width:50%; padding-right:20px;">
+                                    <input class="fullwidth bottomLiner2" type="text" name="city" placeholder="Manila">
                                 </td>
-                                <td>
-                                    <input class="fullwidth" type="text" name="State/Province" placeholder="State/Province">
+                                <td style="width:50%; padding-left:20px;">
+                                    <input class="fullwidth bottomLiner2" type="text" name="State/Province" placeholder="Metro Manila">
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input class="fullwidth" type="text" name="country" placeholder="Country">
+                                <td style="width:50%; padding-right:20px;">
+                                    <input class="fullwidth bottomLiner2" type="text" name="country" placeholder="Philippines">
                                 </td>
-                                <td>
-                                    <input class="fullwidth" type="text" name="ZIP Code" placeholder="ZIP Code">
+                                <td style="width:50%; padding-left:20px;">
+                                    <input class="fullwidth bottomLiner2" type="text" name="ZIP Code" placeholder="1008">
                                 </td>
                             </tr>
                         </td>
@@ -134,22 +141,23 @@
                     <!--Employment details-->
                     <tr>
                         <tr>
-                            <td colspan="3">
-                                <br>
-                                <h2>Employment Details</h2>
+                            <td colspan="2">
+                                <br/><br/>
+                                <b style="font-size: 20px">Employment Details</b>
+                                <br/><br/>
                             </td>
                         </tr>
                         <td>
                             <tr>
-                                <td>
-                                    <label for="employmentid">Employment ID *</label>
+                                <td style="width:50%; padding-right:20px;">
+                                    <label for="employmentid" style="font-size:12px">Employment ID *</label>
                                     <br>
-                                    <input class="fullwidth" type="text" name="employmentid" placeholder="" required>
+                                    <input class="fullwidth bottomLiner2" type="text" name="employmentid" placeholder="XXXXXX" required>
                                 </td>
-                                <td>
-                                    <label for="department">Department *</label>
+                                <td style="width:50%; padding-left:20px;">
+                                    <label for="department" style="font-size:12px">Department *</label>
                                     <br>
-                                    <select class="fullwidth" id="department" name="Department" required>
+                                    <select class="fullwidth bottomLiner2" id="department" name="Department" required>
                                         <option value="" disabled selected>Select Department</option>
                                         <option value="Human Resources">Human Resources</option>
                                         <option value="Information Technology">Information Technology</option>
@@ -161,22 +169,22 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <label for="position">Position *</label>
+                                <td style="width:50%; padding-right:20px;">
+                                    <label for="position" style="font-size:12px">Position *</label>
                                     <br>
-                                    <input class="fullwidth" type="text" name="position" placeholder="" required>
+                                    <input class="fullwidth bottomLiner2" type="text" name="position" placeholder="Manager" required>
                                 </td>
-                                <td>
-                                    <label for="Hire Date">Hire Date *</label>
+                                <td style="width:50%; padding-left:20px;">
+                                    <label for="Hire Date" style="font-size:12px">Hire Date *</label>
                                     <br>
-                                    <input class="fullwidth" type="date" id="birthday" name="birthday" required>
+                                    <input class="fullwidth bottomLiner2" type="date" id="birthday" name="birthday" required>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                <label for="salary">Salary *</label>
+                                <td style="width:50%; padding-right:20px;">
+                                <label for="salary" style="font-size:12px">Salary *</label>
                                 <br>
-                                    <select class="fullwidth" id="salary" name="Salary" required>
+                                    <select class="fullwidth bottomLiner2" id="salary" name="Salary" required>
                                         <option value="" disabled selected>Select Salary</option>
                                         <option value="Lower than 10,000">Lower than 10,000</option>
                                         <option value="10,001-20,000">10,001-20,000</option>
@@ -186,10 +194,10 @@
                                         <option value="50,001-60,000">50,001-60,000</option>
                                         <option value="Higher than 60,000">Higher than 60,000</option>
                                 </td>
-                                <td>
-                                    <label for="supervisor">Supervisor *</label>
+                                <td style="width:50%; padding-left:20px;">
+                                    <label for="supervisor" style="font-size:12px">Supervisor *</label>
                                     <br>
-                                    <input class="fullwidth" type="text" name="supervisor" placeholder="" required>
+                                    <input class="fullwidth bottomLiner2" type="text" name="supervisor" placeholder="Juan Dela Cruz" required>
                                 </td>
                             </tr>
                         </td>
