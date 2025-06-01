@@ -239,7 +239,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   border-spacing: 15px 50px;
 }
 .aligncenter{
-    margin: auto; width:900px; padding: 50px
+    margin: auto; width:100%; padding: 50px
 }
 .font1{
     font-family: 'Times New Roman';
