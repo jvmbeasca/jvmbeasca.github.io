@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists, Forms and Tables</title>
+
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 75%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="unordered">
+            <h3>My Favorites</h3>
+            <ol type="a">
+                <li>Bands
+                    <ul>
+                        <li>Dream Theater</li>
+                        <li>Metallica</li>
+                        <li>Slipknot</li>
+                        <li>Black Veiled Bride</li>
+                        <li>Dragon Force</li>
+                    </ul>
+                </li>
+                <li>Cars
+                    <ul>
+                        <li>Porsche Carrera GT</li>
+                        <li>Laborghini Gallardo</li>
+                        <li>Aston Martin</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="description">
+        <dl>
+            <dt>Bakit ka namamakyu?</dt>
+            <dd>Bakit nga ba? You tell me!</dd>
+        </dl>
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">My Schedule for 3rd Term 2024-2025</th>
+                </tr>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>7:00 - 8:50</td>
+                    <td>IT0079</td>
+                    <td>F1209</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="login">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="username">User Name:</label>
+                <input type="text" name="username" placeholder="Enter your username..">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <button type="submit">Log In</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

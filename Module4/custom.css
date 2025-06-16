@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Visby;
+    src: url(../font/VisbyRoundCF-Regular.woff);
+}
+
+@font-face {
+    font-family: Visby;
+    font-weight: 100;
+    src: url(../font/VisbyRoundCF-Light.woff);
+}
+
+@font-face {
+    font-family: Visby;
+    font-weight: 300;
+    src: url(../font/VisbyRoundCF-DemiBold.woff);
+}
+
+@font-face {
+    font-family: Visby;
+    font-weight: 600;
+    src: url();
+}
+
+body {
+    background-color: #EEF2FB;
+}
+
+p, ul, li, div, nav {
+    padding:0;
+    margin:0;
+}
+
+.logoUL {
+    background-color:#4E68FC;
+    min-width:190px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu {
+    left: 0px;
+    height:100%;
+    z-index:10;
+    background-color: white;
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul.parent-menu li a {
+    display:block;
+    text-decoration: none;
+}
+
+.parent-menu {
+    background-color:white;
+    min-width:190px;
+    float:left;
+}
+
+.parent-menu li {
+    /*border-bottom: thin #666666 solid;*/
+    height:60px;
+}
+
+#menu2 {
+    right: 0px;
+    height: 100%;
+    z-index: 10;
+    background-color: #fafafa;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    border: 1px solid #ededed;
+}
+
+#menu ul li:hover {
+    background-color:#EEF2FB;
+    border-left: 6px solid #4E68FC;
+}
+
+.selected {
+    background-color: #EEF2FB;
+    border-left: 6px solid #4E68FC;
+}
+
+.selected a {
+    color:black !important;
+}
+
+.grid {
+    background-color:white;
+    margin-top: 3%;margin-bottom:4%;
+    padding: 30px 50px 30px 50px !important;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.headerInnerPage {
+    margin-top: 3%;
+    margin-bottom: 4%;
+    padding: 30px 50px 30px 0px !important;
+    border-radius: 10px;
+}
+
+.cards {
+    background-color: white;
+    border: solid 1px #ededed;
+    margin: 2%;
+    padding: 30px 50px 30px 50px !important;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display:flex;
+}
+
+.graphCards {
+    background-color: white;
+    border: solid 1px #ededed;
+    padding: 30px 50px 30px 50px !important;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+}
+
+.minigraphCards {
+    background-color: white;
+    border: solid 1px #ededed;
+    padding: 30px 50px 30px 50px !important;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+.minigraphCards table{
+    width:100%;
+}
+
+.tableWeight td {
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size:16px;
+    font-weight: 300
+}
+
+#usercard {
+    padding: 7%;
+}
+
+.bottomLiner {
+    color: rgb(40, 43, 62);
+    width: 40%;
+    font-size: 16px !important;
+    border: none;
+    border-bottom: 1px solid #282b3e;
+    padding: 10px 20px 10px 10px;
+}
+
+.bottomLiner2 {
+    color: rgb(40, 43, 62);
+    width: 100%;
+    font-size: 16px !important;
+    border: none;
+    border-bottom: 1px solid #282b3e;
+    padding: 10px 20px 10px 10px;
+}
+
+.bottomLiner2:focus {
+    border-bottom: 2px solid #00A758;
+}
+
+.bottomLiner2::placeholder {
+    color: #c4c0c0;
+}
+
+
+.aligncenter{width:100%; background-color: white; }
+.fullwidth{width:100%}
+.font1{font-family: "Helvetica"}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Create a link ot the external CSS-->
+     <!--<link rel="stylesheet" href="external_registration.css">-->
+     <link rel="stylesheet" href="bootstrap.css">
+     <link rel="stylesheet" href="datepicker.css">
+     <link rel="stylesheet" href="custom.css">
+     
+    <title>Employee Registration Form</title>
+</head>
+<body class="font1">
+    <div id="usercard" class="container" style="background-color: white;">
+        <table class="aligncenter">
+            <tr>
+                <td colspan="2">
+                    <span style="font-size:48px">Employee Registration Form</span>
+                    <p style="font-size: 18px;">Please fill out the form for an HR department to complete your registration. An HR manager will contact you with further instructions.</p>
+                    <br/><br/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b style="font-size: 20px;">Personal Information</b>
+                    <br/><br/>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:50%; padding-right:20px;">
+                    <label for="firstname" style="font-size:12px">First Name</label>
+                    <br>
+                    <input class="fullwidth bottomLiner2" type="text" name="=firstname" placeholder="Juan">
+                </td>
+                <td style="width:50%; padding-left:20px;">
+                    <label for="middlename" style="font-size:12px">Middle Name</label>
+                    <br>
+                    <input class="fullwidth bottomLiner2" type="text" name="=middlename" placeholder="Miguel">
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width:50%; padding-right:20px;">
+                    <label for="Suffix" style="font-size:12px">Suffix</label>
+                    <br/>
+                    <select class="fullwidth bottomLiner2" id="Suffix" name="Suffix">
+                        <option value="" disabled selected></option>
+                        <option value="Sr.">Sr.</option>
+                        <option value="Jr.">Jr.</option>
+                        <option value="III">III</option>
+                    </select>
+                </td>
+                <td style="width:50%; padding-left:20px;">
+                    <label for="lastname" style="font-size:12px">Last Name</label>
+                    <br>
+                    <input class="fullwidth bottomLiner2" type="text" name="=lastname" placeholder="Dela Cruz">
+                </td>
+            </tr>
+            <tr>
+                <td style="width:50%; padding-right:20px;">
+                <label for="maritalstatus" style="font-size:12px">Marital Status</label>
+                <br>
+                    <select class="fullwidth bottomLiner2" id="maritalstatus" name="Status">
+                        <option value="" disabled selected></option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Widowed">Widowed</option>
+                        <option value="Widower">Widower</option>
+                        <option value="Divorced">Divorced</option>
+                    </select>
+                </td>
+                <td style="width:50%; padding-left:20px;">
+                    <label for="gender" style="font-size:12px">Gender</label>
+                    <br>
+                    <select class="fullwidth bottomLiner2" id="gender" name="Gender" placeholder=" ">
+                        <option value="" disabled selected></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                        <option value="I'd rather not say">I'd rather not say</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:50%; padding-right:20px;">
+                    <label for="dateofbirth" style="font-size:12px">Date of Birth</label>
+                    <br>
+                        <input class="fullwidth bottomLiner2" type="date" id="birthday" name="birthday">
+                </td>
+                <td style="width:50%; padding-left:20px;">
+                    <label for="mobilenumber" style="font-size:12px">Mobile Number *</label>
+                    <br>
+                    <input class="fullwidth bottomLiner2" type="text" name="=mobilenumber" placeholder="+63XXXXXXXXX" required>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:50%; padding-right:20px;">
+                    <label for="email" style="font-size:12px">E-mail</label>
+                    <br>
+                    <input class="fullwidth bottomLiner2" type="text" name="email" placeholder="juandelacruz@gmail.com">
+                </td>
+                <td style="width:50%; padding-left:20px;">
+
+                </td>
+            </tr>
+            <tr>
+                <td style="width:50%; padding-right:20px;">
+                    <!--Street Address-->
+                    <tr>
+                        <td colspan="2">
+                            <label for="streetaddress" style="font-size:12px">Street Address</label>
+                            <br>
+                            <input class="fullwidth bottomLiner2" type="text" name="=streetaddress" placeholder="#123 Paredes Street">
+                        </td>
+                    </tr>
+                    <!--City-->
+                    <tr>
+                        <td>
+                            <tr>
+                                <td style="width:50%; padding-right:20px;">
+                                    <label for="city" style="font-size:12px">City</label>
+                                    <input class="fullwidth bottomLiner2" type="text" name="city" placeholder="Manila">
+                                </td>
+                                <td style="width:50%; padding-left:20px;">
+                                    <label for="state/province" style="font-size:12px">State/Province</label>
+                                    <input class="fullwidth bottomLiner2" type="text" name="State/Province" placeholder="Metro Manila">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:50%; padding-right:20px;">
+                                    <label for="country" style="font-size:12px">Country</label>
+                                    <input class="fullwidth bottomLiner2" type="text" name="country" placeholder="Philippines">
+                                </td>
+                                <td style="width:50%; padding-left:20px;">
+                                    <label for="zipcode" style="font-size:12px">ZIP Code</label>
+                                    <input class="fullwidth bottomLiner2" type="text" name="ZIP Code" placeholder="1008">
+                                </td>
+                            </tr>
+                        </td>
+                    </tr>
+                </td>
+                <td>
+                    <!--Employment details-->
+                    <tr>
+                        <tr>
+                            <td colspan="2">
+                                <br/><br/>
+                                <b style="font-size: 20px">Employment Details</b>
+                                <br/><br/>
+                            </td>
+                        </tr>
+                        <td>
+                            <tr>
+                                <td style="width:50%; padding-right:20px;">
+                                    <label for="employmentid" style="font-size:12px">Employment ID *</label>
+                                    <br>
+                                    <input class="fullwidth bottomLiner2" type="text" name="employmentid" placeholder="XXXXXX" required>
+                                </td>
+                                <td style="width:50%; padding-left:20px;">
+                                    <label for="department" style="font-size:12px">Department *</label>
+                                    <br>
+                                    <select class="fullwidth bottomLiner2" id="department" name="Department" required>
+                                        <option value="" disabled selected>Select Department</option>
+                                        <option value="Human Resources">Human Resources</option>
+                                        <option value="Information Technology">Information Technology</option>
+                                        <option value="Finance">Finance</option>
+                                        <option value="Marketing">Marketing</option>
+                                        <option value="Operations">Operations</option>
+                                        <option value="Sales">Sales</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:50%; padding-right:20px;">
+                                    <label for="position" style="font-size:12px">Position *</label>
+                                    <br>
+                                    <input class="fullwidth bottomLiner2" type="text" name="position" placeholder="Manager" required>
+                                </td>
+                                <td style="width:50%; padding-left:20px;">
+                                    <label for="Hire Date" style="font-size:12px">Hire Date *</label>
+                                    <br>
+                                    <input class="fullwidth bottomLiner2" type="date" id="birthday" name="birthday" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:50%; padding-right:20px;">
+                                <label for="salary" style="font-size:12px">Salary *</label>
+                                <br>
+                                    <select class="fullwidth bottomLiner2" id="salary" name="Salary" required>
+                                        <option value="" disabled selected>Select Salary</option>
+                                        <option value="Lower than 10,000">Lower than 10,000</option>
+                                        <option value="10,001-20,000">10,001-20,000</option>
+                                        <option value="20,001-30,000">20,001-30,000</option>
+                                        <option value="30,001-40,000">30,001-40,000</option>
+                                        <option value="40,001-50,000">40,001-50,000</option>
+                                        <option value="50,001-60,000">50,001-60,000</option>
+                                        <option value="Higher than 60,000">Higher than 60,000</option>
+                                </td>
+                                <td style="width:50%; padding-left:20px;">
+                                    <label for="supervisor" style="font-size:12px">Supervisor *</label>
+                                    <br>
+                                    <input class="fullwidth bottomLiner2" type="text" name="supervisor" placeholder="Juan Dela Cruz" required>
+                                </td>
+                            </tr>
+                        </td>
+                    </tr>
+                </td>
+            </tr> 
+            <tr>
+                <td colspan="2" style="text-align: center">
+                        <br>
+                        <button class="button button-center" type="Register">Register</button>
+                </td>
+            </tr>    
+        </table>
+    </div>
+</body>
+</html>
