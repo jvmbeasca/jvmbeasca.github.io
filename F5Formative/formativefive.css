@@ -241,3 +241,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   margin: auto;
 }
 .textsize{font-weight:bold}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+img {
+  border-radius: 50%;
+}
