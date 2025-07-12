@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Pokémon GO Webstore</title>
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/pokeball.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark pokemon-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/Pokemon Go.png" alt="Pokémon GO" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="cart.html" class="btn btn-outline-light position-relative me-2">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">
+                            0
+                        </span>
+                    </a>
+                    <div class="account-dropdown">
+                        <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+                    </div>
+                    <a href="register.html" class="btn pokemon-btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Payment Section -->
+    <section class="pokemon-payment-section py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h1 class="pokemon-text-blue">Complete Your Purchase</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="cart.html">Cart</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Payment</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pokemon-card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Payment Method</h5>
+                            <ul class="nav nav-pills mb-4" id="paymentMethodTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="credit-card-tab" data-bs-toggle="pill" data-bs-target="#credit-card" type="button" role="tab">
+                                        <i class="far fa-credit-card me-2"></i> Credit/Debit Card
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="paypal-tab" data-bs-toggle="pill" data-bs-target="#paypal" type="button" role="tab">
+                                        <i class="fab fa-paypal me-2"></i> PayPal
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="google-pay-tab" data-bs-toggle="pill" data-bs-target="#google-pay" type="button" role="tab">
+                                        <i class="fab fa-google-pay me-2"></i> Google Pay
+                                    </button>
+                                </li>
+                            </ul>
+                            
+                            <div class="tab-content" id="paymentMethodTabContent">
+                                <div class="tab-pane fade show active" id="credit-card" role="tabpanel">
+                                    <form id="paymentForm">
+                                        <div class="mb-3">
+                                            <label for="cardNumber" class="form-label">Card Number</label>
+                                            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="cardName" class="form-label">Name on Card</label>
+                                            <input type="text" class="form-control" id="cardName" required>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="expiryDate" class="form-label">Expiry Date</label>
+                                                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="cvv" class="form-label">CVV</label>
+                                                <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" id="saveCard">
+                                            <label class="form-check-label" for="saveCard">Save this card for future purchases</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                                <div class="tab-pane fade" id="paypal" role="tabpanel">
+                                    <div class="text-center py-4">
+                                        <p>You will be redirected to PayPal to complete your purchase securely.</p>
+                                        <button class="btn pokemon-btn-primary">
+                                            <i class="fab fa-paypal me-2"></i> Continue with PayPal
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-pane fade" id="google-pay" role="tabpanel">
+                                    <div class="text-center py-4">
+                                        <p>You will be redirected to Google Pay to complete your purchase securely.</p>
+                                        <button class="btn pokemon-btn-primary">
+                                            <i class="fab fa-google-pay me-2"></i> Continue with Google Pay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pokemon-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Billing Address</h5>
+                            <div class="mb-3">
+                                <label for="country" class="form-label">Country</label>
+                                <select class="form-select" id="country" required>
+                                    <option value="" selected disabled>Select Country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="JP">Japan</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Street Address</label>
+                                <input type="text" class="form-control" id="address" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="state" class="form-label">State/Province</label>
+                                    <input type="text" class="form-control" id="state" required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="zip" class="form-label">ZIP/Postal Code</label>
+                                    <input type="text" class="form-control" id="zip" required>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="saveAddress">
+                                <label class="form-check-label" for="saveAddress">Save this address for future purchases</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="pokemon-card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Order Summary</h5>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div id="orderItems">
+                                    <!-- Order items will be dynamically inserted here -->
+                                    <p class="text-muted">No items in cart</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <span id="orderSubtotal">$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Tax</span>
+                                <span id="orderTax">$0.00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between fw-bold">
+                                <span>Total</span>
+                                <span id="orderTotal">$0.00</span>
+                            </div>
+                            <div class="form-check mt-3 mb-3">
+                                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                <label class="form-check-label" for="termsCheck">I agree to the <a href="#" class="text-decoration-none">Terms of Service</a></label>
+                            </div>
+                            <button type="submit" class="btn pokemon-btn-primary w-100" id="completeOrderBtn">Complete Order</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pokemon-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Secure Payment</h5>
+                            <p class="card-text small mb-3">All transactions are secure and encrypted.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <img src="assets/Visa.png" alt="Visa" height="30">
+                                <img src="assets/Mastercard.png" alt="Mastercard" height="30">
+                                <img src="assets/American Express.png" alt="American Express" height="30">
+                                <img src="assets/Paypal.png" alt="PayPal" height="30">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pokemon-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="assets/Pokemon Go.png" alt="Pokémon GO" height="40">
+                    <p class="mt-2">The official webstore for Pokémon GO in-game items.</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5>Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html">All Items</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Bundles</a></li>
+                        <li><a href="#">Special Deals</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Connect With Us</h5>
+                    <div class="pokemon-social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="mt-2">© 2023 Pokémon GO. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Success Modal -->
+    <div class="modal fade" id="paymentSuccessModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle text-success" style="font-size: 5rem;"></i>
+                    </div>
+                    <h3 class="mb-3">Payment Successful!</h3>
+                    <p class="mb-4">Thank you for your purchase. Your items will be delivered to your Pokémon GO account shortly.</p>
+                    <a href="index.html" class="btn pokemon-btn-primary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

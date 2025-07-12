@@ -1,0 +1,375 @@
+/* Custom styles for Pokémon GO theme */
+:root {
+    --pokemon-blue: #2a75bb;
+    --pokemon-yellow: #ffcb05;
+    --pokemon-red: #cc0000;
+    --pokemon-dark: #3c5aa6;
+}
+
+.pokemon-bg-gradient {
+    background: linear-gradient(135deg, var(--pokemon-blue) 0%, var(--pokemon-dark) 100%);
+}
+
+.pokemon-btn-primary {
+    background-color: var(--pokemon-yellow);
+    color: #2a75bb;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pokemon-btn-primary:hover {
+    background-color: #f1c100;
+    color: #2a75bb;
+}
+
+.pokemon-btn-secondary {
+    background-color: var(--pokemon-blue);
+    color: white;
+    border: none;
+}
+
+.pokemon-btn-secondary:hover {
+    background-color: #1f5a9b;
+    color: white;
+}
+
+.pokemon-text-yellow {
+    color: var(--pokemon-yellow);
+}
+
+.pokemon-text-blue {
+    color: var(--pokemon-blue);
+}
+
+.pokemon-card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.pokemon-card .card-img-top {
+    padding: 20px;
+    background: #f8f9fa;
+    height: 200px;
+    object-fit: contain;
+}
+
+.pokemon-card .card-body {
+    padding: 1.5rem;
+    border-top: 3px solid var(--pokemon-yellow);
+}
+
+.pokemon-card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--pokemon-blue);
+}
+
+.pokemon-navbar {
+    background-color: var(--pokemon-dark);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.pokemon-navbar .navbar-brand img {
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.pokemon-navbar .navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.pokemon-navbar .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.pokemon-navbar .nav-link.active {
+    background-color: var(--pokemon-yellow);
+    color: var(--pokemon-blue) !important;
+}
+
+.pokemon-hero {
+    background: url('../assets/0kkvgt5iqby61.gif') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding: 5rem 0;
+    color: white;
+    text-align: center;
+}
+
+.pokemon-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(42, 117, 187, 0.85);
+}
+
+.pokemon-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.pokemon-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 1.5rem;
+}
+
+.pokemon-hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.pokemon-section-title {
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.pokemon-section-title h2 {
+    display: inline-block;
+    background: var(--pokemon-blue);
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pokemon-featured-badge {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: var(--pokemon-red);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.pokemon-news-ticker {
+    background: var(--pokemon-dark);
+    color: white;
+    padding: 0.75rem 0;
+    overflow: hidden;
+}
+
+.pokemon-news-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.pokemon-news-content span {
+    margin-right: 3rem;
+    font-weight: 500;
+}
+
+.pokemon-news-content .badge {
+    background: var(--pokemon-yellow);
+    color: var(--pokemon-blue);
+    margin-right: 1rem;
+}
+
+.pokemon-footer {
+    background: var(--pokemon-dark);
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.pokemon-footer h5 {
+    color: var(--pokemon-yellow);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.pokemon-footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.pokemon-footer a:hover {
+    color: var(--pokemon-yellow);
+}
+
+.pokemon-social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 0.5rem;
+    transition: all 0.3s;
+}
+
+.pokemon-social-icons a:hover {
+    background: var(--pokemon-yellow);
+    color: var(--pokemon-blue) !important;
+    transform: translateY(-3px);
+}
+
+.pokemon-countdown {
+    background: var(--pokemon-red);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pokemon-countdown h4 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.pokemon-countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pokemon-countdown-item {
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    min-width: 60px;
+}
+
+.pokemon-countdown-item span:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+}
+
+.pokemon-countdown-item span:last-child {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+/* Animation classes */
+.animate-pop {
+    animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.9); opacity: 0; }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pokemon-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .pokemon-hero p {
+        font-size: 1rem;
+    }
+    
+    .pokemon-section-title h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+    }
+    
+    .pokemon-card .card-img-top {
+        height: 150px;
+    }
+    
+    .pokemon-countdown-timer {
+        flex-wrap: wrap;
+    }
+    
+    .pokemon-countdown-item {
+        min-width: 45px;
+        padding: 0.5rem;
+    }
+}
+
+/* Additional utility classes */
+.account-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+}
+
+hr {
+    border-color: rgba(255,255,255,0.1);
+}
+
+/* Cart item images */
+.cart-table img {
+    border-radius: 10px;
+    background: #f8f9fa;
+    padding: 5px;
+}
+
+/* Disable quantity input styling */
+.cart-table .input-group {
+    pointer-events: none;
+}
+
+.cart-table .input-group .btn {
+    display: none;
+}
+
+.cart-table .quantity-input {
+    border: none;
+    background: transparent;
+    text-align: center;
+}
